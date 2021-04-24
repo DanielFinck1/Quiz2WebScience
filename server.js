@@ -7,10 +7,6 @@ const https = require('https');
 /* This is where the Angular files live after they are built.  */
 app.use(express.static(path.join(__dirname, './ajax/dist/ajax')));
 
-app.get('*', function(req, res) {
-  res.sendfile(path.join(__dirname + '/ajax/dist/ajax/index.html'));
-});
-
 app.get('/comic', (req,res) => {
   var MongoClient = require('mongodb').MongoClient;
   var url = "mongodb+srv://dan:comic@cluster0.jkw9q.mongodb.net/comics";
@@ -25,6 +21,10 @@ app.get('/comic', (req,res) => {
       res.json(result);
     });
   });  
+});
+
+app.get('*', function(req, res) {
+  res.sendfile(path.join(__dirname + '/ajax/dist/ajax/index.html'));
 });
 
 app.listen(port, () => {

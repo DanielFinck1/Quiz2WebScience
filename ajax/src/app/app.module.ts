@@ -14,7 +14,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { MarvelComponent } from './marvel/marvel.component';
 import { DCComponent } from './dc/dc.component';
-import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     AjaxComponent,
     HeaderComponent,
     MarvelComponent,
-    DCComponent,
-    FooterComponent
+    DCComponent
   ],
   imports: [
     BrowserModule,
