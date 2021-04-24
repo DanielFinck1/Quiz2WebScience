@@ -1,0 +1,21 @@
+.title {
+  text-align: center;
+}
+
+.comic-border {
+  background-image: linear-gradient(to right, rgb(237, 27, 35), rgb(1, 120, 240));
+  margin: auto;
+  width: 230px;
+}
+
+.marvel-color {
+  color: rgb(237, 27, 35);
+}
+
+.dc-color {
+  color: rgb(1, 120, 240);
+}
+
+.recent {
+  text-decoration: underline;
+}

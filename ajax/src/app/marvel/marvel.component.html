@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">  
+      <h2 class="marvel-color recent"><strong>Marvel Comics</strong></h2>
+    <div class="col-lg-3 col-md-6 col-sm-6 comic" *ngFor="let comic of comics">
+      <div *ngIf="comic.marvel">
+        <p class="text-center">{{ comic.title }} <span><strong>#{{comic.issue}}</strong></span></p>
+        <mat-card class="comic-border" >
+          <img src={{comic.image}} height="300" alt="profile image">
+          <p class="text-center price">Price: ${{comic.price}}</p>
+          <p class="text-center condition">Condition: {{comic.condition}}</p>
+        </mat-card>
+      </div>
+      <br />
+    </div>
+  </div>
+</div>
